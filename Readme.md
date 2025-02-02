@@ -1,0 +1,8 @@
+- **docker system prune:** This will remove all stopped containers, all networks not used by at least one container, all dangling images and unused build cache
+- **docker exec -it <container_ID> <command_to_execute> :** docker exec -it ff3211d redis-cli
+- **docker build --no-cache --progress=plain . :** no-cache flag to disable any caching, --progress=plain flag to disable hiding progress log
+- **docker-compose up :** docker run my image
+- **docker-compose up --build :** docker build . andThen docker run image
+- **docker-compose up -d :** Launch in background
+- **docker-compose down :** Stop containers
+- **docker-compose up --build -d :** docker build . andThen docker run my image andThen Launch in background

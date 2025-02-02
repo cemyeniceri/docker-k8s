@@ -1,0 +1,15 @@
+services:
+  redis-server:
+    image: 'redis'
+    restart: on-failure
+    command:
+      [
+        "redis-server",
+        "--protected-mode",
+        "no"
+      ]
+  node-app:
+    build: .
+    restart: on-failure
+    ports:
+      - "4001:8081"
